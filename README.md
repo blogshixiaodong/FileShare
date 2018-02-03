@@ -13,23 +13,23 @@ MyEclipse+Tomcat+MySql
 
 <b>功能介绍</b>
 <ul>
-       <li>用户注册<li>
+       <li>用户注册</li>
        <li>用户登陆</li>
-       <li>文件上传<li>
+       <li>文件上传</li>
        <li>文件下载</li>
-       <li>用户留言<li>
+       <li>用户留言</li>
 </ul>
 
 
-引用Jar文件：
-cos.jar  文件上传下载
-pers.sxd.sql.statement-1.1.jar  自己封装的SQL语句生成帮助类（GIT地址：https://github.com/blogshixiaodong/SqlStatementPool.git）
-mysql-connector-java-5.0.8-bin.jar MySql驱动
-commons-dbutils-1.7.jar 数据库帮助类
-json相关jar包：
-commons-beanutils-1.8.0.jar
-commons-collections-3.2.1.jar
-commons-lang-2.5.jar
-commons-logging-1.1.1.jar
-ezmorph-1.0.6.jar
-json-lib-2.3.jar
+<b>引用Jar文件</b>
+cos.jar  文件上传下载<br />
+pers.sxd.sql.statement-1.1.jar  自己封装的SQL语句生成帮助类（GIT地址：https://github.com/blogshixiaodong/SqlStatementPool.git）<br />
+mysql-connector-java-5.0.8-bin.jar MySql驱动<br />
+commons-dbutils-1.7.jar 数据库帮助类<br />
+json相关jar包：<br />
+commons-beanutils-1.8.0.jar<br />
+commons-collections-3.2.1.jar<br />
+commons-lang-2.5.jar<br />
+commons-logging-1.1.1.jar<br />
+ezmorph-1.0.6.jar<br />
+json-lib-2.3.jar<br />
