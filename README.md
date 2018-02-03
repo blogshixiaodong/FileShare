@@ -21,11 +21,16 @@ MyEclipse+Tomcat+MySql
 </ul>
 
 
-<b>引用Jar文件</b>
+<b>引用Jar文件</b><br />
+
 cos.jar  文件上传下载<br />
+
 pers.sxd.sql.statement-1.1.jar  自己封装的SQL语句生成帮助类（GIT地址：https://github.com/blogshixiaodong/SqlStatementPool.git）<br />
+
 mysql-connector-java-5.0.8-bin.jar MySql驱动<br />
+
 commons-dbutils-1.7.jar 数据库帮助类<br />
+
 json相关jar包：<br />
 commons-beanutils-1.8.0.jar<br />
 commons-collections-3.2.1.jar<br />
