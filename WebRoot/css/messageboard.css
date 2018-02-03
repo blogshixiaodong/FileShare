@@ -1,0 +1,147 @@
+@CHARSET "UTF-8";
+body {
+  font-family: 'Open Sans', 'sans-serif';
+  background: #eee url(../image/background.png);
+}
+
+#main {
+	margin-top: 20px;
+}
+
+#main,#main #right,#main #right #login-form {
+	padding: 0;
+}
+
+#main #right .panel:nth-child(1) .panel-body {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+/*输入框面板样式*/
+#input-message .panel-body {
+	padding-bottom: 0;
+}
+
+/*提示剩余字数样式*/
+#input-message #sendMessage p {
+	margin-top: 7px;
+	font-size: 16px;
+}
+
+/*留言面板样式*/
+#message-board .panel-body {
+	padding: 0;
+}
+
+/*留言列表UL样式*/
+#message-board .list {
+	margin: 0;
+	background-image: url(../image/background.png);
+}
+
+#message-board .list li {
+	margin-bottom: 5px;
+	padding: 0;
+}
+
+/*rowno 隐藏样式*/
+#message-board .list li p {
+	display: none;
+}
+
+/*用户信息 li左边部分样式*/
+#message-board .list li .user {
+	width: 125px;
+	padding: 10px;
+	float: left;
+	text-align: center;
+	border-right: 1px solid rgb(221, 221, 221);
+	background-color: rgb(239, 244, 251);
+}
+
+/*用户头像样式*/
+#message-board .list li .user img {
+	height: 60px;
+	width: 60px;
+	margin: 10px 5px 5px 10px;
+}
+
+/*用户名样式*/
+#message-board .list li .user .userName {
+	margin-top: 10px;
+}
+
+/*回复内容容器 设置*/
+#message-board .list li .content {
+	height: 125px;
+	width: 980px;
+	margin-top: 0;
+	float: left;
+}
+
+/*回复内容设置*/
+#message-board .list li .content .msgInfo {
+	padding: 20px 20px 0 20px;
+	height: 60px;
+	word-wrap:break-word;
+	word-break:break-all;
+}
+
+/*content-bar顶/赞/删除  样式*/
+#message-board .list li .content .content-bar {
+	margin-top: 40px;
+	color: #889db6;
+	border-top: 1px solid rgb(221, 221, 221);
+}
+
+#message-board .list li .content .content-bar span {
+	padding-right: 30px;
+}
+
+#message-board .list li .content .content-bar a {
+	padding-right: 30px;
+}
+
+
+#message-board .list li .content .content-bar .pull-right {
+	
+}
+/*
+#message-board .panel-body {
+	padding: 0;
+}
+
+#message-board .list img {
+	width: 50px;
+}
+
+#message-board .list .content .userName {
+	display: inline;
+}
+
+#message-board .list .content .msgInfo {
+	display: inline;
+}
+
+#message-board .list .content .times {
+	margin-top: 10px;
+}
+
+
+
+#message-board .list .content .times a {
+	float: right;
+	display: none;
+}
+
+.panel {
+	padding: 0;
+}
+
+#input-message img.active {
+	border: 1px solid white;
+}
+
+#message img.active {
+	border: 1px solid red;
+}*/

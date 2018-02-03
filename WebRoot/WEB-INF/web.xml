@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>FileShare</display-name>
+  <servlet>
+    <servlet-name>InitDataBase</servlet-name>
+    <servlet-class>com.sxd.fs.servlet.InitDataBase</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet>
+    <description>To get check code.</description>
+    <display-name>CheckCode</display-name>
+    <servlet-name>CheckCode</servlet-name>
+    <servlet-class>com.sxd.fs.servlet.CheckCode</servlet-class>
+  </servlet>
+  <servlet>
+    <description>To check user input account, password and check code</description>
+    <display-name>LoginCheck</display-name>
+    <servlet-name>LoginCheck</servlet-name>
+    <servlet-class>com.sxd.fs.servlet.LoginCheck</servlet-class>
+  </servlet>
+ 
+  <servlet>
+  	<description>Get the download file list</description>
+  	<display-name>FileList</display-name>
+    <servlet-name>FileList</servlet-name>
+    <servlet-class>com.sxd.fs.servlet.FileList</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>Download file</description>
+  	<display-name>FileDownload</display-name>
+    <servlet-name>FileDownload</servlet-name>
+    <servlet-class>com.sxd.fs.servlet.FileDownload</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>Upload file</description>
+  	<display-name>FileUpload</display-name>
+    <servlet-name>FileUpload</servlet-name>
+    <servlet-class>com.sxd.fs.servlet.FileUpload</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>Delete file</description>
+  	<display-name>FileDelete</display-name>
+    <servlet-name>FileDelete</servlet-name>
+    <servlet-class>com.sxd.fs.servlet.FileDelete</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>Delete message</description>
+  	<display-name>MessageDelete</display-name>
+    <servlet-name>MessageDelete</servlet-name>
+    <servlet-class>com.sxd.fs.servlet.MessageDelete</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>Insert message</description>
+  	<display-name>MessageInsert</display-name>
+    <servlet-name>MessageInsert</servlet-name>
+    <servlet-class>com.sxd.fs.servlet.MessageInsert</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>Get message list</description>
+  	<display-name>MessageList</display-name>
+    <servlet-name>MessageList</servlet-name>
+    <servlet-class>com.sxd.fs.servlet.MessageList</servlet-class>
+  </servlet>
+  <servlet>
+    <description>Register check</description>
+    <display-name>RegisterCheck</display-name>
+    <servlet-name>RegisterCheck</servlet-name>
+    <servlet-class>com.sxd.fs.servlet.RegisterCheck</servlet-class>
+  </servlet>
+
+
+  <servlet-mapping>
+    <servlet-name>CheckCode</servlet-name>
+    <url-pattern>/servlet/CheckCode</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginCheck</servlet-name>
+    <url-pattern>/servlet/LoginCheck</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FileList</servlet-name>
+    <url-pattern>/servlet/FileList</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FileDownload</servlet-name>
+    <url-pattern>/servlet/FileDownload</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FileUpload</servlet-name>
+    <url-pattern>/servlet/FileUpload</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FileDelete</servlet-name>
+    <url-pattern>/servlet/FileDelete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MessageDelete</servlet-name>
+    <url-pattern>/servlet/MessageDelete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MessageInsert</servlet-name>
+    <url-pattern>/servlet/MessageInsert</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MessageList</servlet-name>
+    <url-pattern>/servlet/MessageList</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegisterCheck</servlet-name>
+    <url-pattern>/servlet/RegisterCheck</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 过滤器 -->
+  <filter>
+    <filter-name>LoginFilter</filter-name>
+    <filter-class>com.sxd.fs.filter.LoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>/index.jsp</url-pattern>
+    <url-pattern>/file_upload.jsp</url-pattern>
+    <url-pattern>/messageboard.jsp</url-pattern>
+  </filter-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

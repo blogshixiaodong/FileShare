@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/2002/xmlspec/dtd/2.10/xmlspec.dtd">
+
+
+<Context>
+	<!-- <Resource name = "jdbc/SqlServer" tyep = "javax.sql.DataSource" auth 
+		= "Container" driverClassName = "com.microsoft.jdbc.sqlserver.SQLServerDriver" 
+		url = "jdbc:sqlserver://localhost:1433;databaseName=students" username = 
+		"sa" password = "shixiaodong" maxActive = "20" maxIdle = "10" maxWait = "3000" 
+		></Resource> -->
+	<Resource name="jdbc/MySql" type="javax.sql.DataSource" auth="Container"
+		driverClassName="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:3306/db_file_share?useUnicode=true&amp;characterEncoding=UTF-8"
+		username="root" password="shixiaodong" maxActive="20" maxIdle="10"
+		maxWait="3000"></Resource>
+
+	<!-- <Resource name = "jdbc/Oracle" tyep = "javax.sql.DataSource" auth 
+		= "Container" driverClassName = "oracle.jdbc.driver.OracleDriver" url = "jdbc:oracle:thin@127.0.0.1:1521:orcl" 
+		username = "sys" password = "shixiaodong" maxActive = "20" maxIdle = "10" 
+		maxWait = "3000" ></Resource> -->
+
+</Context>
